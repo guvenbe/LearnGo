@@ -36,5 +36,11 @@ var (
 func main() {
 	name, location := "Prince Oberyn", "Dorne"
 	age := 32
-	fmt.Printf("%s age %d from %s ", name, age, location)
+	fmt.Printf("%s age %d from %s \n", name, age, location)
+	fmt.Printf("%T\n", age)  //type
+	fmt.Printf("%b\n", age)  //binary
+	fmt.Printf("%x\n", age)  //hex
+	fmt.Printf("%#x\n", age) //hex with 0x in front
+	fmt.Printf("%v", age)    //value in default format
+
 }

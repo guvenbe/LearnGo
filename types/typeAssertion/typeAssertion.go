@@ -5,6 +5,12 @@ import (
 	"time"
 )
 
+var a int = 1
+
+type hotdog int
+
+var b hotdog = 3
+
 func timeMap(y interface{}) {
 	z, ok := y.(map[string]interface{}) //asserting y as map of interfaces
 	if ok {
@@ -18,4 +24,9 @@ func main() {
 	}
 	timeMap(foo)
 	fmt.Println(foo)
+
+	//conversion (not) casting
+	a = int(b)
+	b = hotdog(a)
+
 }
