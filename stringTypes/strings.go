@@ -2,6 +2,24 @@ package main
 
 import "fmt"
 
+const (
+	a         = 42
+	b float64 = 42.78
+	c         = "Bora Guven"
+)
+
+const (
+	a=iota
+	b
+	c
+)
+
+fmt.println("------")
+fmt.Println(a)
+fmt.Println(b)
+fmt.Println(c)
+const PI = 3.14
+
 func main() {
 	s := "Hello, playground"
 	fmt.Println(s)
@@ -21,9 +39,9 @@ func main() {
 	for i, v := range s {
 		fmt.Printf("Index: %d => hex:%#U", i, v)
 	}
-	s := `H`
-	fmt.Println(s)
-	n := []byte(s)
+	s1 := `H`
+	fmt.Println(s1)
+	n := []byte(s1)
 	fmt.Printf("%T\n", n)
 	fmt.Printf("%b\n", n)
 	fmt.Printf("%#X\n", n)
