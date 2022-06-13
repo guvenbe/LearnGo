@@ -20,6 +20,8 @@ fmt.Println(b)
 fmt.Println(c)
 const PI = 3.14
 
+
+fmt.Println("***********Strings*************")
 func main() {
 	s := "Hello, playground"
 	fmt.Println(s)
