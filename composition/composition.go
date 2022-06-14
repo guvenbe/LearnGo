@@ -42,7 +42,7 @@ func main() {
 	p2 := Player{User{Id: 43, Name: "Matt", Location: "LA"}, 90404, time.Now()}
 	fmt.Printf("%+v\n", p2)
 	fmt.Println(p2.Greetings())
-
+	fmt.
 	job := &Job{"demo", log.New(os.Stdout, "Job: ", log.Ldate)}
 	job.Logger.Print("test")
 }
