@@ -1,7 +1,28 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func main() {
-	fmt.Println("hello world")
+type person struct{
+	first string
+	last string
 }
+func main() {
+	p1 : =person{
+		first: "James",
+		last: "Bond",
+	}
+
+	p2:= person{
+		first: "Miss",
+		last: "MoneyPenny",
+	}
+	fmt.Println(p1)
+	fmt.Println(p2)
+
+	
+	fmt.Println(p1.first)
+	fmt.Println(p1.last)
+}
+
