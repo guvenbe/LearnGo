@@ -1,4 +1,4 @@
-// Package test for sum
+// Package demo for sum
 package main
 
 import "fmt"

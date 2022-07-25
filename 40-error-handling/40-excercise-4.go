@@ -25,7 +25,7 @@ func main() {
 func sqrt(f float64) (float64, error) {
 	if f < 0 {
 		me := fmt.Errorf("sqaure root of negative number: %v", f)
-		return 0, sqrtError{"50.2289 N", "99.4656 W", me}
+		return 0, sqrtError{"50.2289 N", "99.4656 W",, me}
 	}
 	return 42, nil
 }
